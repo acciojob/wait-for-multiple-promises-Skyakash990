@@ -3,7 +3,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const output = document.getElementById("output");
 
   // Initially, add a loading row
-  output.innerHTML = `<tr><td colspan="2">Loading...</td></tr>`;
+  output.innerHTML = `<tr id="loading"><td colspan="2">Loading...</td></tr>`;
 
   // Function to generate a promise that resolves after a random delay
   function createPromise(index) {
